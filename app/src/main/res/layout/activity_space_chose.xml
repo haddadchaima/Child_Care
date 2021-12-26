@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpaceChose">
+
+    <View
+        android:id="@+id/view_noise_texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/noise_texture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_welcome_joh2"
+        android:layout_width="@dimen/width_txt_welcome"
+        android:layout_height="@dimen/height_txt_welcome"
+        android:alpha="0.86"
+        android:breakStrategy="balanced"
+        android:fontFamily="@font/abel_regular"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:maxLines="2"
+        android:text="@string/txt_welcome_joh"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="@dimen/welcome_joh"
+        android:translationY="@dimen/translationY"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/img_btn_parents"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/img_btn_parents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/parents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome_joh2"
+        app:layout_constraintBottom_toTopOf="@id/img_btn_child"/>
+
+    <ImageView
+        android:id="@+id/img_btn_child"
+        android:layout_width="330dp"
+        android:layout_height="284dp"
+        android:src="@drawable/child"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_btn_parents" />
+
+    <ImageView
+        android:id="@+id/img_home_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn1">
+
+    <View
+        android:id="@+id/view_noise_texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/noise_texture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_microsoft_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top"
+        android:src="@drawable/microsoft_team"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_guidline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/margin_guidline" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_welcome_joh"
+        android:layout_width="@dimen/width_txt_welcome"
+        android:layout_height="@dimen/height_txt_welcome"
+        android:layout_marginStart="@dimen/margin_sides"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/abel_regular"
+        android:breakStrategy="balanced"
+        android:maxLines="2"
+        app:autoSizeTextType="uniform"
+        android:alpha="0.86"
+        android:gravity="top"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:text="@string/txt_welcome_signin"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="@dimen/welcome_joh"
+        android:translationY="@dimen/translationY"
+        android:layout_marginBottom="@dimen/margin_spacing2"
+        app:layout_constraintBottom_toTopOf="@id/const_buttons"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/img_microsoft_team" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_spacing_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome_joh"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toEndOf="@id/guideline_right">
+
+        <LinearLayout
+            android:id="@+id/linear_button_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="@dimen/margin_between_btn"
+            app:layout_constraintBottom_toTopOf="@id/linear_button_gmail"
+           >
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin_email"
+                android:layout_weight="1"
+                android:textColor="@color/noise_texture"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_start"
+                 />
+            <ImageView
+                android:id="@+id/img_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_email"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_start"/>
+            <ImageView
+                android:id="@+id/img_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/noise_texture"
+                android:layout_marginStart="@dimen/margin_start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_button_gmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_between_btn"
+            android:layout_marginBottom="@dimen/margin_between_btn"
+            app:layout_constraintBottom_toTopOf="@id/linear_button_fb"
+            app:layout_constraintTop_toBottomOf="@id/linear_button_email">
+
+            <TextView
+                android:id="@+id/txt_gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin_gmail"
+                android:textColor="@color/noise_texture"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_start"
+                />
+            <ImageView
+                android:id="@+id/img_gmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_google"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_start"/>
+            <ImageView
+                android:id="@+id/img_arrow_gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/noise_texture"
+                android:layout_marginStart="@dimen/margin_start"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_button_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/margin_between_btn"
+            app:layout_constraintBottom_toTopOf="@id/linear_signup"
+            app:layout_constraintTop_toBottomOf="@id/linear_button_gmail">
+
+            <TextView
+                android:id="@+id/txt_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signin_fb"
+                android:textColor="@color/noise_texture"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_start"
+                />
+            <ImageView
+                android:id="@+id/img_fb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_facebook"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_start"/>
+            <ImageView
+                android:id="@+id/img_arrow_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/noise_texture"
+                android:layout_marginStart="@dimen/margin_start"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_spacing2"
+            android:layout_marginBottom="@dimen/margin_spacing2"
+            android:layout_marginStart="@dimen/margin_sides"
+            android:layout_marginEnd="@dimen/margin_sides"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_button_fb">
+
+            <TextView
+                android:id="@+id/btn_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/abel_regular"
+                android:text="@string/txt_sign_up"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:shadowColor="@null"
+                android:lineSpacingExtra="@dimen/lineSpacingExtra"
+                android:translationY="-1.03sp"
+                android:gravity="top"
+                android:alpha="0.86"
+                />
+            <ImageView
+                android:id="@+id/img_underline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/underline"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_home_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

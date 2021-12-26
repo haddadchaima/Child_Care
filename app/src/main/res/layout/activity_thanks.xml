@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Thanks">
+    <View
+        android:id="@+id/view_noise_texture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/noise_texture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_welcome_joh2"
+        android:layout_width="@dimen/width_txt_welcome"
+        android:layout_height="@dimen/height_txt_welcome"
+        android:alpha="0.86"
+        android:breakStrategy="balanced"
+        android:fontFamily="@font/poppins_regular"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/lineSpacingExtra"
+        android:maxLines="2"
+        android:text="@string/thanks"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:translationY="@dimen/translationY"
+        app:autoSizeTextType="uniform"
+        android:layout_marginTop="@dimen/margin_spacing1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/img_chatting"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/img_chatting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_4in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_welcome_joh2"
+        app:layout_constraintBottom_toTopOf="@id/btn_start"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="@dimen/width_btn_dash"
+        android:layout_height="@dimen/height_btn"
+        android:background="@drawable/button_normal"
+        android:text="@string/go_dashboard"
+        android:textColor="@color/noise_texture"
+        android:textSize="16sp"
+        android:fontFamily="@font/abel_regular"
+        android:drawableRight="@drawable/ic_chevron_right"
+        android:drawableTint="@color/noise_texture"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/margin_between_btn2"
+        app:layout_constraintTop_toBottomOf="@id/img_chatting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_home_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home_indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_card"
+        android:layout_marginTop="@dimen/margin_spacing1"
+        android:layout_marginBottom="@dimen/margin_spacing_card"
+        android:layout_marginStart="@dimen/margin_side_card"
+        android:layout_marginEnd="@dimen/margin_side_card"
+        app:layout_constraintEnd_toStartOf="@id/linear_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear_3">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/txt_danger"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="High"
+            android:textColor="@color/red"
+            android:alpha="0.59"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_card"
+        android:layout_marginTop="@dimen/margin_spacing1"
+        android:layout_marginBottom="@dimen/margin_spacing_card"
+        android:layout_marginStart="@dimen/margin_side_card"
+        android:layout_marginEnd="@dimen/margin_side_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linear_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear_4">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/txt_last_sleep"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.59"
+            android:text="8h"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_card"
+        android:layout_marginEnd="@dimen/margin_side_card"
+        android:background="@drawable/white_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_card"
+        android:layout_marginTop="@dimen/margin_spacing_card"
+        android:layout_marginBottom="@dimen/margin_spacing_card"
+
+        app:layout_constraintEnd_toStartOf="@id/linear_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/txt_device_usage"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.59"
+            android:text="4h"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_side_card"
+        android:layout_marginEnd="@dimen/margin_side_card"
+        android:background="@drawable/white_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_card"
+        android:layout_marginTop="@dimen/margin_spacing_card"
+        android:layout_marginBottom="@dimen/margin_spacing_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linear_3"
+        app:layout_constraintTop_toBottomOf="@id/linear_2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/txt_call_duration"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.59"
+            android:text="4h"
+            android:textAlignment="center"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_background"
+        android:layout_marginTop="@dimen/margin_spacing_card"
+        android:layout_marginStart="@dimen/margin_side_card"
+        android:layout_marginEnd="@dimen/margin_side_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_4"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/title_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Alerts"
+            android:textSize="14dp"
+            android:textFontWeight="700"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="left"
+            android:layout_marginStart="@dimen/margin_side_card"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/padding"
+            android:paddingStart="@dimen/padding"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarStyle="@null"
+            android:scrollbarThumbHorizontal="@null"
+            android:scrollbarThumbVertical="@null"
+            android:scrollbars="none"
+            app:fastScrollEnabled="false"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

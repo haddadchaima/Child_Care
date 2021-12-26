@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Mobile Android Native</string>
+    <string name="txt_welcome_signin">Welcome to 4In Shield! Sign in to continue</string>
+    <string name="txt_welcome_joh">Who is going to use this device?</string>
+    <string name="signin_email">Sign in with Email</string>
+    <string name="signin_gmail">Sign in with Gmail</string>
+    <string name="signin_fb">Sign in with Facebook</string>
+    <string name="txt_sign_up">No Acount? Sign up</string>
+    <string name="txt_forget_pw">Forget password?</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_pw">Confirm your Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="txt_terms">I herby accept terms and conditions</string>
+    <string name="start">Start</string>
+    <string name="txt_bienvenu">Welcom to 4IN Shield</string>
+    <string name="txt_add_device">Please add your child’s devices</string>
+    <string name="info_add_device">The information from your child’s device will help us to assess their mental health, duration of sleep, places visited, used applications  etc.
+It also gives you the ability to block or allow installed applications</string>
+    <string name="txt_steps">"Please follow the following steps:
+       \n 1.Bring your child’s mobile phone
+       \n 2.Scan this QR code with your child’s device camera
+        \n 3.You will be redirected to the 4IN shield application download page
+        \n 4.Once the application is installed, click Next"
+    </string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="txt_confirm_profile">Your child’s profile information has been successfully added</string>
+    <string name="add">Add new profile</string>
+    <string name="continu">Continue</string>
+    <string name="modify">Modify profile information</string>
+    <string name="go_dashboard">Go to dashboard</string>
+    <string name="thanks">Thank you for your confidence in us.</string>
+    <string name="congratulation"> <bold> Congratulation! </bold> \nYou have successfully completed you child profile.</string>
+    <string name="txt_another_child">Add another child</string>
+    <string name="menu_dash">DASHBOARD</string>
+    <string name="menu_phone">PHONE USAGE</string>
+    <string name="menu_social_md">SOCIAL MEDIA</string>
+    <string name="menu_alerts">ALERTS</string>
+    <string name="txt_danger">Danger Level</string>
+    <string name="txt_last_sleep">last Night Sleep</string>
+    <string name="txt_device_usage">Device Usage</string>
+    <string name="txt_call_duration">Phone Call Duration</string>
+    <string name="toxic_com">Toxic Comments</string>
+    <string name="sleep">Sleep depreviation!</string>
+    <string name="txt_enter">Please enter your child’s social media account information </string>
+    <string name="txt_info">This information will help us to protect your child from online abusive content and cyberharassment </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dropdown">Social network platform (Drop down)</string>
+    <string name="social_username">Social network user name</string>
+    <string name="social_url">Social network page URL</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_button_normal">6dp</dimen>
+    <dimen name="welcome_joh">22sp</dimen>
+    <dimen name="translationY">-0.98sp</dimen>
+    <dimen name="lineSpacingExtra">2sp</dimen>
+    <dimen name="margin_sides">12dp</dimen>
+    <dimen name="margin_top">12dp</dimen>
+    <dimen name="margin_guidline">40dp</dimen>
+    <dimen name="width_btn_normal">310dp</dimen>
+    <dimen name="height_btn_normal">50dp</dimen>
+    <dimen name="margin_start">10dp</dimen>
+    <dimen name="margin_between_btn">13dp</dimen>
+    <dimen name="margin_between_btn2">12dp</dimen>
+    <dimen name="margin_spacing1">63dp</dimen>
+    <dimen name="margin_spacing2">41dp</dimen>
+    <dimen name="margin_spacing_bottom">196dp</dimen>
+    <dimen name="width_txt_welcome">240dp</dimen>
+    <dimen name="height_txt_welcome">89dp</dimen>
+    <dimen name="width_txt_child_device">302dp</dimen>
+    <dimen name="height_txt_child_device">89dp</dimen>
+    <dimen name="width_btn">111dp</dimen>
+    <dimen name="height_btn">50dp</dimen>
+    <dimen name="margin_side_txt">22dp</dimen>
+    <dimen name="margin_side_btn">60dp</dimen>
+    <dimen name="width_add">149dp</dimen>
+    <dimen name="width_continue">138dp</dimen>
+    <dimen name="width_modify">205dp</dimen>
+    <dimen name="width_btn_dash">152dp</dimen>
+    <dimen name="radius_nab_bottom">25dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding_tab">30dp</dimen>
+    <dimen name="padding_card">15dp</dimen>
+    <dimen name="margin_side_card">27dp</dimen>
+    <dimen name="margin_spacing_card">14dp</dimen>
+    <dimen name="margin_sides_2">20dp</dimen>
+    <dimen name="margin_spacing_3">59dp</dimen>
+    <dimen name="margin_spacing_4">53dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ic_clear_margin">56dp</dimen>
+
+</resources>
